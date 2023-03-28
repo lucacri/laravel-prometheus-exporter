@@ -1,6 +1,6 @@
 <?php
 
-namespace Superbalist\LaravelPrometheusExporter;
+namespace Lucacri\LaravelPrometheusExporter;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;
@@ -48,7 +48,8 @@ class PrometheusServiceProvider extends ServiceProvider
         });
 
         $this->app->bind(Adapter::class, function ($app) {
-            $factory = $app['prometheus.storage_adapter_factory']; /** @var StorageAdapterFactory $factory */
+            $factory = $app['prometheus.storage_adapter_factory'];
+            /** @var StorageAdapterFactory $factory */
             $driver = config('prometheus.storage_adapter');
             $configs = config('prometheus.storage_adapters');
             $config = Arr::get($configs, $driver, []);

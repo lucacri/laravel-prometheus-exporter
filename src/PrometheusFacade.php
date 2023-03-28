@@ -1,6 +1,6 @@
 <?php
 
-namespace Superbalist\LaravelPrometheusExporter;
+namespace Lucacri\LaravelPrometheusExporter;
 
 use Illuminate\Support\Facades\Facade;
 

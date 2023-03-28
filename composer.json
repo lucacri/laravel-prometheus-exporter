@@ -1,8 +1,12 @@
 {
-  "name": "superbalist/laravel-prometheus-exporter",
+  "name": "lucacri/laravel-prometheus-exporter",
   "description": "A prometheus exporter for Laravel",
   "license": "MIT",
   "authors": [
+    {
+      "name": "Luca Critelli",
+      "email": "github@critel.li"
+    },
     {
       "name": "Superbalist.com a division of Takealot Online (Pty) Ltd",
       "email": "info@superbalist.com"
@@ -17,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Superbalist\\LaravelPrometheusExporter\\": "src/",
+      "Lucacri\\LaravelPrometheusExporter\\": "src/",
       "Tests\\": "tests/"
     }
   },
@@ -27,10 +31,10 @@
     },
     "laravel": {
       "providers": [
-        "Superbalist\\LaravelPrometheusExporter\\PrometheusServiceProvider"
+        "Lucacri\\LaravelPrometheusExporter\\PrometheusServiceProvider"
       ],
       "aliases": {
-        "Prometheus": "Superbalist\\LaravelPrometheusExporter\\PrometheusFacade"
+        "Prometheus": "Lucacri\\LaravelPrometheusExporter\\PrometheusFacade"
       }
     }
   },
