@@ -19,6 +19,7 @@ class StorageAdapterFactoryTest extends TestCase
 
     public function testMakeApcAdapter()
     {
+        $this->markTestSkipped("APC is obsolete");
         $factory = new StorageAdapterFactory();
         $adapter = $factory->make('apc');
         $this->assertInstanceOf(APC::class, $adapter);
